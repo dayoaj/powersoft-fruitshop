@@ -1,0 +1,97 @@
+h1,
+h2,
+h3 {
+  color: $specialTextSecondary;
+}
+
+p {
+  color: $textDefault;
+}
+
+.hero {
+  min-height: 25rem;
+  background-color: $heroBackground;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23f57f17' fill-opacity='0.70' fill-rule='evenodd'/%3E%3C/svg%3E");
+  & .hero-content {
+    @include padding-top(8rem);
+    padding-bottom: 5rem;
+    max-width: 45rem;
+    & .card {
+      background-color: $homeBackgroundPrimary;
+    }
+    & h1 {
+      font-size: calc(1.5rem + 1.5vw);
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    // @include media-breakpoint-up(sm) {
+    //   padding-top: 11rem;
+    // }
+  }
+}
+
+.content-wrap {
+  @include padding-top(8.5rem);
+  @include padding-bottom(8.5rem);
+  & h2 {
+    font-weight: 700;
+    @include font-size(2.7rem);
+  }
+  & h3 {
+    font-weight: 700;
+    @include font-size(2rem);
+  }
+  & p {
+    @include font-size(1.23rem);
+  }
+}
+
+.features-wrapper {
+  & img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  & .feature-list {
+    @include margin-bottom(8.5rem);
+    &:last-child {
+      margin-bottom: auto;
+    }
+  }
+  & .feature-text {
+    flex: 1 0 50%;
+    @include margin-top(6rem);
+  }
+}
+
+.testimonies {
+  background-color: $homeBackgroundPrimary;
+  & h2 {
+    @include margin-bottom(3rem);
+  }
+  & .card-body {
+    & .card-text {
+      color: $body-color;
+    }
+    & .face {
+      overflow: hidden;
+      @include margin-right(0.8rem);
+      & img {
+        border-radius: 50%;
+        object-fit: cover;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.signup-section {
+  background-color: #535353;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='50' height='25' viewBox='0 0 50 25'%3E%3Cdefs%3E%3Crect stroke='%23999999' stroke-width='0.1' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23999999' stroke-width='0.1'%3E%3Crect fill='%239b9b9b' width='1' height='1'/%3E%3Crect fill='%23999999' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%239d9d9d' width='1' height='1' y='1'/%3E%3Crect fill='%239f9f9f' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23a1a1a1'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23a3a3a3'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23999999'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23a5a5a5'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23ffd600'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23ffd600'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='50' height='25'/%3E%3Crect fill='url(%23b)' width='50' height='25'/%3E%3Crect fill='url(%23c)' width='50' height='25'/%3E%3Crect fill='url(%23d)' width='50' height='25'/%3E%3Crect fill='url(%23e)' width='50' height='25'/%3E%3Crect fill='url(%23f)' width='50' height='25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  & h2 {
+    color: #fff9c4;
+  }
+}

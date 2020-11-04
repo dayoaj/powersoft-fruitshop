@@ -1,0 +1,32 @@
+{
+  "name": "powersoft-fruitshop",
+  "version": "1.0.0",
+  "description": "Online Fruitshop Front-End",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dayoaj/powersoft-fruitshop.git"
+  },
+  "scripts": {
+    "start": "parcel *.html",
+    "cleanbuild": "node clean.js",
+    "build": "npm run cleanbuild && parcel build *.html --dist-dir docs --public-url ./"
+  },
+  "keywords": [
+    "ecommerce",
+    "bootstrap"
+  ],
+  "author": "Ifedayo Ajibola",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha2",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^10.0.1",
+    "parcel": "^2.0.0-nightly.435",
+    "postcss": "^8.1.4",
+    "sass": "^1.28.0"
+  }
+}

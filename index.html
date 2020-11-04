@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffab00" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" href="assets/fruits.svg" type="image/svg+xml" />
+    <title>FruitShop | Shop for fresh Fruits Online</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand d-flex align-items-center font-weight-bolder"
+            href="index.html"
+          >
+            <img
+              src="assets/fruits.svg"
+              alt=""
+              width="50"
+              height="50"
+              class="d-inline-block align-top mr-1"
+            />
+            Fruitshop
+          </a>
+          <div style="flex-grow: 1"></div>
+          <div class="order-lg-1 ml-lg-1 d-flex align-items-center">
+            <button
+              class="btn-toggle-theme bg-transparent border-0"
+              type="button"
+              data-toggle="collapse"
+              aria-label="Toggle Dark Theme"
+              style="width: 2rem; height: 2rem"
+            >
+              <!-- <svg
+                width="2rem"
+                height="2rem"
+                viewBox="0 0 16 16"
+                class="bi bi-sun"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3.5 8a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"
+                />
+              </svg> -->
+            </button>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-toggle="collapse"
+              aria-label="Shopping Cart"
+            >
+              <svg
+                width="2rem"
+                height="2rem"
+                viewBox="0 0 16 16"
+                class="bi bi-cart4"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                />
+              </svg>
+            </button>
+            <button
+              class="navbar-toggler bg-transparent border-0"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                width="2.5rem"
+                height="2.5rem"
+                viewBox="0 0 16 16"
+                class="bi bi-caret-down"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-menu" id="navbarNav">
+            <ul
+              class="navbar-nav ml-lg-2 mt-2 mt-lg-0 mb-2 mb-lg-0 font-weight-bold"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="products.html"
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stores</a>
+              </li>
+              <li class="nav-item mb-2 mb-lg-0 ml-lg-4">
+                <form class="d-flex">
+                  <input
+                    class="form-control bg-transparent mr-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-secondary" type="submit">
+                    Search
+                  </button>
+                </form>
+              </li>
+              <li class="nav-item ml-lg-3">
+                <a href="#" class="btn btn-secondary font-weight-bold">
+                  Sign Up
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="flex-grow-1">
+      <main>
+        <section class="hero">
+          <div class="container-lg">
+            <div class="d-flex hero-content align-items-end">
+              <div class="card rounded-lg border-0">
+                <div class="card-body">
+                  <h1 class="mb-4 mb-md-5">
+                    Fresh Fruits delivered in as little as 1 hour
+                  </h1>
+                  <a href="products.html" class="btn btn-secondary btn-lg"
+                    >Shop now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features-wrapper content-wrap">
+          <div class="container-lg">
+            <div class="feature feature-list">
+              <h2>Shop for fruits you love</h2>
+              <p>Browse our large collection of fresh fruits</p>
+            </div>
+
+            <div class="feature-1 feature-list d-flex flex-column flex-sm-row">
+              <div class="feature-img-wrapper">
+                <img
+                  src="assets/live_healthy.svg"
+                  alt="a man standing by a  gigantic smartphone with healthy things on its screen"
+                />
+              </div>
+              <div class="feature-text ml-sm-4">
+                <h3>Live Healthy</h3>
+                <p>
+                  Organically grown fruits, rich in essential nutrients and
+                  dietary Fiber
+                </p>
+              </div>
+            </div>
+            <div class="feature-2 feature-list d-flex flex-column flex-sm-row">
+              <div class="feature-img-wrapper order-sm-1">
+                <img
+                  src="assets/on_time_delivery.svg"
+                  alt="a woman making a delivery on her motorcycle"
+                />
+              </div>
+              <div class="feature-text mr-sm-4">
+                <h3>Get same-day delivery or Pickup</h3>
+                <p>
+                  Order for delivery or pickup from local stores in cities like
+                  <a href="#">Lagos</a>, <a href="#">Abuja</a>,
+                  <a href="#">Port Harcourt</a>, <a href="#">Ibadan</a>, and
+                  many more
+                </p>
+              </div>
+            </div>
+            <div class="feature-1 feature-list d-flex flex-column flex-sm-row">
+              <div class="feature-img-wrapper">
+                <img
+                  src="assets/save_time.svg"
+                  alt="a woman sitting on the second-hand of a gigantic clock"
+                />
+              </div>
+              <div class="feature-text ml-sm-4">
+                <h3>Save time & Money</h3>
+                <p>
+                  Find exclusive deals on popular products and get the items you
+                  love delivered or ready for pickup in as little as 2 hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonies content-wrap">
+          <div class="container-lg">
+            <div>
+              <h2>Trusted by 10,000+ households</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-3 g-2 g-lg-4">
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <p class="card-text">
+                      The day I found Fruitshop, was the day my life began to
+                      make sense. I can now buy fruits at my convenience! It
+                      saves me time!
+                    </p>
+                    <div class="testimonial-footer d-flex">
+                      <div class="face">
+                        <img
+                          src="assets/profile-pic1.jpg"
+                          alt="The face of ifedayo"
+                          width="50"
+                          height="50"
+                        />
+                      </div>
+                      <div class="about d-flex flex-column">
+                        <span class="card-text font-weight-bold d-inline-block"
+                          >Ifedayo Ajibola</span
+                        >
+                        <span class="card-text d-inline-block"
+                          >Fruit Enthusiast</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <p class="card-text">
+                      The day I found Fruitshop, was the day my life began to
+                      make sense. I can now buy fruits at my convenience! It
+                      saves me time!
+                    </p>
+                    <div class="testimonial-footer d-flex">
+                      <div class="face">
+                        <img
+                          src="assets/profile-pic1.jpg"
+                          alt="The face of ifedayo"
+                          width="50"
+                          height="50"
+                        />
+                      </div>
+                      <div class="about d-flex flex-column">
+                        <span class="card-text font-weight-bold d-inline-block"
+                          >Ifedayo Ajibola</span
+                        >
+                        <span class="card-text d-inline-block"
+                          >Fruit Enthusiast</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <p class="card-text">
+                      The day I found Fruitshop, was the day my life began to
+                      make sense. I can now buy fruits at my convenience! It
+                      saves me time!
+                    </p>
+                    <div class="testimonial-footer d-flex">
+                      <div class="face">
+                        <img
+                          src="assets/profile-pic1.jpg"
+                          alt="The face of ifedayo"
+                          width="50"
+                          height="50"
+                        />
+                      </div>
+                      <div class="about d-flex flex-column">
+                        <span class="card-text font-weight-bold d-inline-block"
+                          >Ifedayo Ajibola</span
+                        >
+                        <span class="card-text d-inline-block"
+                          >Fruit Enthusiast</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="signup-section">
+          <div
+            class="container-lg py-5 px-2 d-flex justify-content-center flex-column align-items-center"
+          >
+            <h2 class="text-center">Order for Delivery or Pick-up Now!</h2>
+            <div>
+              <a href="products.html" class="btn btn-primary btn-lg"
+                >Shop now</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="py-3">
+      <div class="container-xl">
+        <nav>
+          <h2>Other Nav</h2>
+          <ul class="d-flex flex-column flex-sm-row">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Stores</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </nav>
+        <p>Copyright © 2020 Powersoft Solutions.</p>
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

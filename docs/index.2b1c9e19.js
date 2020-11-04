@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".btn-toggle-theme");"dark"==localStorage.getItem("psFruitShoptheme")&&(document.documentElement.classList.add("dark-theme"),e.classList.add("dark-theme")),e.addEventListener("click",(function(){document.documentElement.classList.toggle("dark-theme"),e.classList.toggle("dark-theme");var t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("psFruitShoptheme",t)}))}();
+//# sourceMappingURL=index.2b1c9e19.js.map

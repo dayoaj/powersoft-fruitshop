@@ -1,0 +1,48 @@
+$primary: $yellow-700;
+$secondary: $green-700;
+
+$body-bg: $black;
+$body-color: $gray-100;
+$card-bg: $black;
+
+$font-family-sans-serif: Ubuntu, Roboto, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+$link-color: #e8f5e9;
+$link-hover-color: #c8e6c9;
+
+$primaryDark: $yellow-100;
+$secondaryDark: $green-100;
+
+$primaryLight: #f57f17;
+$secondaryLight: $green-800;
+
+$textDefault: $gray-100;
+
+$specialTextPrimary: #fff9c4;
+$specialTextSecondary: #e8f5e9;
+
+$specialTextPrimaryActive: $yellow-300;
+$specialTextSecondaryActive: $teal-600;
+
+$headerBackground: #ff6f00;
+$homeBackgroundPrimary: rgb(245 127 23 / 78%);
+$heroBackground: #ffb74d;
+$footerBackground: $gray-700;
+
+$card-border: 1px solid rgb(150 150 150);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+img {
+  filter: brightness(0.8) contrast(1.2);
+}

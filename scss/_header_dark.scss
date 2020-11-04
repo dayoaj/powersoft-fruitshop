@@ -1,0 +1,16 @@
+nav {
+  & button {
+    color: $primary;
+  }
+}
+
+.btn-toggle-theme {
+  background-color: $body-bg;
+  border: none;
+}
+
+@include media-breakpoint-up(md) {
+  .navbar-menu {
+    width: auto;
+  }
+}
